@@ -1,0 +1,92 @@
+/* Login page styles using the same design system as MainTodo */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .login-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  
+  .login-subtitle {
+    text-align: center;
+    color: var(--light-text);
+    margin-bottom: 2rem;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-field {
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  }
+  
+  .login-divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    color: var(--lighter-text);
+  }
+  
+  .login-divider::before,
+  .login-divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .login-divider span {
+    padding: 0 1rem;
+  }
+  
+  .google-login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 480px) {
+    .login-card {
+      padding: 1.5rem;
+    }
+    
+    .login-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  }
