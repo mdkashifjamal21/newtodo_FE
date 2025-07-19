@@ -33,7 +33,7 @@ function MainTodo() {
       setIsLoading(true);  
       setError(null);  
       try {  
-        const response = await fetch("http://localhost:7000/v1/getTasks");  
+        const response = await fetch("https://newtodo-back-data.onrender.com/v1/getTasks");  
         if (!response.ok) throw new Error('Failed to fetch tasks');  
         
         const data = await response.json();  
@@ -53,7 +53,7 @@ function MainTodo() {
       setIsLoading(true);  
       setError(null);  
       try {  
-        const response = await fetch("http://localhost:7000/v1/postTasks", {  
+        const response = await fetch("https://newtodo-back-data.onrender.com/v1/postTasks", {  
           method: "POST",  
           headers: { 'Content-Type': 'application/json' },  
           body: JSON.stringify(  
@@ -89,7 +89,7 @@ function MainTodo() {
       setIsLoading(true);  
       setError(null);  
       try {  
-        const response = await fetch(`http://localhost:7000/v1/updateTask/${id}`, {  
+        const response = await fetch(`https://newtodo-back-data.onrender.com/v1/updateTask/${id}`, {  
           method: "PUT",  
           headers: { 'Content-Type': 'application/json' },  
           body: JSON.stringify({ todo: inputValue })  
@@ -114,7 +114,7 @@ function MainTodo() {
       setIsLoading(true);  
       setError(null);  
       try {  
-        const response = await fetch(`http://localhost:7000/v1/deleteTask/${id}`, {  
+        const response = await fetch(`https://newtodo-back-data.onrender.com/v1/deleteTask/${id}`, {  
           method: "DELETE",  
         });  
   
