@@ -39,7 +39,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-card">
         <h1 className="login-title">Todo App</h1>
-        <p className="login-subtitle">Sign in to manage your tasks</p>
+        <p className="login-subtitle">Sign i to manage your tasks</p>
         
         <div className="login-form">
           <input 
